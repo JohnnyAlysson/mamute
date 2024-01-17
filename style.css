@@ -18,7 +18,6 @@ html{
   background-size: 50px;
   background-image: url("https://as2.ftcdn.net/v2/jpg/01/37/81/97/1000_F_137819766_dgFsCLOVCF6fuOjn53t8lpuc9oxsCmtf.jpg");
 }
-
 .menu {
   background-color: #101c3a;
   overflow: hidden;
@@ -79,12 +78,65 @@ html{
   }
 }
 
-.faixa1{
-  background-color: grey;
-  max-height: 5px;
-} 
 
-.image_slider{
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  }
+
+.slides{
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width: 25%;
+  position: relative;
+}
+.slide img{
+width: 800px;
+}
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin: -40px auto ;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 2px solid #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manu-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background-color: #ffffff;
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+
+
+
+/* .image_slider{
     background-color:rgb(255, 255, 255);
     height:100vh;
     display: flex;
@@ -93,7 +145,7 @@ html{
     align-items: center;
     margin: 0px  auto;
     flex-direction: column;
-  }
+  } */
   
   .faixa2{
     background-color: rgb(221, 255, 0);
