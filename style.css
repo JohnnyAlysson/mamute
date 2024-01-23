@@ -78,12 +78,22 @@ html{
   }
 }
 
+.localhome{
+
+  width: 80vw;
+  display: flex;
+  /* height: 100vh; */
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+  margin: 0 auto;
+}
 
 .slider{
-  margin: 0 auto;
   width: 800px;
   height: 400px;
   overflow: hidden;
+  
 }
 
 .slides{
@@ -105,6 +115,7 @@ html{
 
 .slide img{
   width: 800px;
+  border-radius: 5px;;
 }
 
 .manual-navigation{
@@ -280,11 +291,14 @@ html{
 
 .sobre{
   background-color: #f2f2f2;
+  size: 100vh;
+  size: 100vw;
 }
 
 .texto_sobre{
   font-family: "Montserrat";
   display: flex;
+  /* flex-wrap: wrap; */
   padding: 20px;
   justify-content: center;
   flex-direction: column;
@@ -306,6 +320,7 @@ html{
   align-items: center;
   /* width: 100px; */
   padding: 20px;
+  flex: [flex-grow] [flex-shrink] [flex-basis]
 }
 
 .conteudo_sobre{

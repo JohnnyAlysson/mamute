@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Montserrat:ital@0;1&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
-    <script src="/script.js"></script>
+ 
     <title>Mamute </title>
 </head>
 <div id="back-to-top" style="display: block;"><a href="#">Voltar para o topo</a></div>
@@ -31,50 +31,50 @@
             </div>    
       </div>
     </header>
-    
-    <div id="home" class="slider">
-        <div class="slides">
-            <!--- Radio buttons--->
-            <input type="radio" name="radion-btn" id="radio1">
-            <input type="radio" name="radion-btn" id="radio2">
-            <input type="radio" name="radion-btn" id="radio3">
-            <input type="radio" name="radion-btn" id="radio4">
-            <!---End Radio buttons-->
+    <section class="localhome">
+        <div id="home" class="slider">
+            <div class="slides">
+                <!--- Radio buttons--->
+                <input type="radio" name="radion-btn" id="radio1">
+                <input type="radio" name="radion-btn" id="radio2">
+                <input type="radio" name="radion-btn" id="radio3">
+                <input type="radio" name="radion-btn" id="radio4">
+                <!---End Radio buttons-->
 
-            <!---Slide images-->
-            <div class="slide first">
-                <img src="https://media.istockphoto.com/id/1353007397/pt/foto/aerial-view-of-blue-lakes-and-and-hills-with-green-forests-in-croatia.jpg?s=2048x2048&w=is&k=20&c=Hso7V9lK8FzAltlKoA8NgZsc_fPt0puGAeCrTaIZITY=" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png" alt="">
-            </div>
+                <!---Slide images-->
+                <div class="slide first">
+                    <img src="https://media.istockphoto.com/id/1353007397/pt/foto/aerial-view-of-blue-lakes-and-and-hills-with-green-forests-in-croatia.jpg?s=2048x2048&w=is&k=20&c=Hso7V9lK8FzAltlKoA8NgZsc_fPt0puGAeCrTaIZITY=" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png" alt="">
+                </div>
 
-            <!---End Slide images-->
+                <!---End Slide images-->
 
-            <!---Navigation auto-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
+                <!---Navigation auto-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+        
+            <!---End Navigation auto-->
             </div>
-    
-        <!---End Navigation auto-->
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
         </div>
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
-    </div>
-
+    </section>
 
     <section id="sobre" class="sobre">
         <div class="texto_sobre">
@@ -113,5 +113,6 @@
     <section id="contato" class="contato">Contato</section>
     <footer class="rodape">Rodapé</footer>
     <script src="script.js"></script>
+    <script src="animation.js"></script>
 </body>
 </html>
