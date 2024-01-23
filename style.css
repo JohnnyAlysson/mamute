@@ -78,12 +78,22 @@ html{
   }
 }
 
+.localhome{
+
+  width: 80vw;
+  display: flex;
+  /* height: 100vh; */
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+  margin: 0 auto;
+}
 
 .slider{
-  margin: 0 auto;
   width: 800px;
   height: 400px;
   overflow: hidden;
+  
 }
 
 .slides{
@@ -105,6 +115,7 @@ html{
 
 .slide img{
   width: 800px;
+  border-radius: 5px;;
 }
 
 .manual-navigation{
@@ -277,6 +288,68 @@ html{
   #back-to-top a:hover {
     background-color: #222222;
   }
+
+.sobre{
+  background-color: #f2f2f2;
+  size: 100vh;
+  size: 100vw;
+}
+
+.texto_sobre{
+  font-family: "Montserrat";
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+
+}
+
+.texto_sobre h1{
+  font-size: 40px;
+  font-weight: 500;
+}
+.texto_sobre h2{
+  font-size: 20px;
+}
+.container_conteudo_sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100px; */
+  padding: 20px;
+  flex: [flex-grow] [flex-shrink] [flex-basis]
+}
+
+.conteudo_sobre{
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.conteudo_sobre img{
+  width: 300px;
+  border-radius: 20px;
+}
+
+.conteudo_sobre h2{
+  font-size: 20px;
+  font-style: italic;
+  padding: 10px;
+  font-weight: 550;
+}
+/* .conteudo_sobre h3{
+  font-size: 10px;
+} */
+
+
+
+
+
   /*  #101c3a 
       #000000
       #ffffff
