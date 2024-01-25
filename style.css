@@ -188,41 +188,9 @@ html{
 #radio4:checked ~.navigation-auto .auto-btn4{
   background-color: #fff;
 }
-/* .image_slider{
-    background-color:rgb(255, 255, 255);
-    height:100vh;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    margin: 0px  auto;
-    flex-direction: column;
-  } */
-  
-  .faixa2{
-    background-color: rgb(221, 255, 0);
-    max-height: 5px;
-  }
-  .modalidades{
-    background-color:rgb(255, 255, 255);
-    width: 80vw;
-    min-height: 100vh;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    margin: 0px  auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .lista_modalidade{
-    background-color: rgba(255, 255, 255, 0.873);
-    justify-content: center;
-    align-items: center;
-    display:flex;
-    gap: 50px;
-    padding: 50px;
-  }
-  .faixa3{
+
+
+.faixa3{
     background-color: rgb(255, 123, 0);
     max-height: 5px;
   }
@@ -293,7 +261,11 @@ html{
   background-color: #f2f2f2;
   size: 100vh;
   size: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
 
 .texto_sobre{
   font-family: "Montserrat";
@@ -320,9 +292,15 @@ html{
   align-items: center;
   /* width: 100px; */
   padding: 20px;
-  flex: [flex-grow] [flex-shrink] [flex-basis]
+  flex-direction: row;
+  transition: 0.5 ease-in-out;
 }
 
+@media (max-width: 800px) {
+  .container_conteudo_sobre {
+    flex-direction: column;
+  }
+}
 .conteudo_sobre{
   align-content: center;
   justify-content: center;
@@ -332,8 +310,9 @@ html{
 
 
 .conteudo_sobre img{
-  width: 300px;
+  max-width: 400px;
   border-radius: 20px;
+  
 }
 
 .conteudo_sobre h2{
@@ -342,9 +321,49 @@ html{
   padding: 10px;
   font-weight: 550;
 }
-/* .conteudo_sobre h3{
-  font-size: 10px;
-} */
+.conteudo_sobre h3{
+  font-size: 20px;
+}
+
+.modalidades{
+  background-color:rgb(255, 255, 255);
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+  align-items: center;
+  margin: 0px  auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+.lista_modalidade{
+  background-color: rgba(89, 199, 89, 0.873);
+  min-width: 80vw;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  padding: 50px;
+  gap: 20px 20px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 800px) {
+  .lista_modalidade {
+    flex-direction: column;
+  }
+}
+.lista_modalidade h2{
+  font-size: 20px;
+  font-style: italic;
+  padding: 10px;
+  font-weight: 550;
+}
+.lista_modalidade p {
+  font-size: 20px;
+}
+.lista_modalidade img{
+  max-width: 400px;
+}
 
 
 
@@ -387,5 +406,3 @@ html{
   font-variation-settings:
     "wdth" 100;
 }
-
-   */
