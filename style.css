@@ -194,16 +194,7 @@ html{
     background-color: rgb(255, 123, 0);
     max-height: 5px;
   }
-  .depoimentos{
-    background-color: rgb(255, 255, 255);
-    width: 80vw;
-    height: 400px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    align-items: center;
-    margin: 0px  auto;
-  }
+
   .faixa4{
     background-color: rgb(40, 210, 28);
     max-height: 5px;
@@ -373,6 +364,27 @@ html{
   padding: 20px;
 }
 
+  .depoimentos{
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    margin: 0px  auto;
+  }
+  .container_depoimentos{
+    margin: 10px;
+    background-color: #150adb;
+    align-content: center;
+    justify-content: center;
+  }
+  .container_depoimentos img{
+    width: 100px;
+    padding: 20px;
+    border-radius: 60%;
+  }
 
 
 
