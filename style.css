@@ -188,17 +188,6 @@ html{
 #radio4:checked ~.navigation-auto .auto-btn4{
   background-color: #fff;
 }
-
-
-.faixa3{
-    background-color: rgb(255, 123, 0);
-    max-height: 5px;
-  }
-
-  .faixa4{
-    background-color: rgb(40, 210, 28);
-    max-height: 5px;
-  }
   .contato{
     background-color: rgb(255, 255, 255);
     width: 80vw;
@@ -208,10 +197,6 @@ html{
     padding: 0 20px;
     align-items: center;
     margin: 0px  auto;
-  }
-  .faixa5{
-    background-color: rgb(166, 0, 243);
-    max-height: 5px;
   }
   .rodape{
     background-color: #101c3a;
@@ -274,7 +259,7 @@ html{
   font-size: 40px;
   font-weight: 500;
 }
-.texto_sobre h2{
+.texto_sobre h2{ 
   font-size: 20px;
 }
 .container_conteudo_sobre{
@@ -313,7 +298,7 @@ html{
   font-weight: 550;
 }
 .conteudo_sobre h3{
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .modalidades{
@@ -339,11 +324,6 @@ html{
 
 }
 
-@media (max-width: 800px) {
-  .lista_modalidade {
-    flex-direction: column;
-  }
-}
 .lista_modalidade h2{
   font-size: 20px;
   font-style: italic;
@@ -368,24 +348,74 @@ html{
     background-color: rgb(255, 255, 255);
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: space-between;
     padding: 0 20px;
     align-items: center;
     margin: 0px  auto;
   }
   .container_depoimentos{
+    display: flex;
     margin: 10px;
-    background-color: #150adb;
+    /* background-color: #150adb; */
     align-content: center;
-    justify-content: center;
-  }
-  .container_depoimentos img{
-    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    gap:20px;
     padding: 20px;
-    border-radius: 60%;
   }
 
+  @media (max-width: 800px) {
+    .lista_modalidade , .container_depoimentos {
+      flex-direction: column;
+    }
+  }
+
+  .depoimento_content{
+    background-color: #85756E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70vh;
+    margin:20px;
+    padding: 10px;
+    border-radius: 50px;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 20px;
+  }
+  .depoimento_content p{
+    font-size: 15px;
+
+  }
+  
+  .depoimento_image{
+    border-radius: 20px;
+    background-image: url(https://img.freepik.com/free-photo/designer-working-3d-model_23-2149371896.jpg?w=360&t=st=1706654073~exp=1706654673~hmac=e7a08fe47f632103674200cd5837b800ac561edc75b4f2caf37624bbe16cf1d1);
+    background-color: #04AA6D;
+    filter:drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 1rem);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+  }
+  .link_depoimentos{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: 50%;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #c5c7bd;
+    color: #000000;
+    margin: 20px auto;
+    width: 150px;
+    border-radius: 20px;
+    padding: 30px;
+    filter: drop-shadow(rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem);
+  }
 
 
   /*  #101c3a 
