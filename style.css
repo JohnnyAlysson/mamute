@@ -188,17 +188,8 @@ html{
 #radio4:checked ~.navigation-auto .auto-btn4{
   background-color: #fff;
 }
-  .contato{
-    background-color: rgb(255, 255, 255);
-    width: 80vw;
-    height: 400px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    align-items: center;
-    margin: 0px  auto;
-  }
-  .rodape{
+
+.rodape{
     background-color: #101c3a;
     height: 150px;
     display: flex;
@@ -252,7 +243,7 @@ html{
   flex-direction: column;
   align-content: center;
   text-align: center;
-
+  
 }
 
 .texto_sobre h1{
@@ -345,7 +336,6 @@ html{
 }
 
   .depoimentos{
-    background-color: rgb(255, 255, 255);
     width: 100vw;
     height: 100vh;
     padding: 0 20px;
@@ -417,8 +407,16 @@ html{
     filter: drop-shadow(rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem);
     
   }
-
-
+  
+  .contato{
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    margin: 0px  auto;
+  }
   /*  #101c3a 
       #000000
       #ffffff
@@ -426,7 +424,7 @@ html{
       #DE6B48
       #85756E
       #5B7553
-  */
+      */
 
 /* Fonts Styles:
 
