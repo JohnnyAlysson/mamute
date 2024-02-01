@@ -1,8 +1,9 @@
 html{
   scroll-behavior: smooth;
+  margin: 0;
 }
- .pagina{
-  background-color: black;
+.pagina{
+  background-color: rgb(255, 255, 255);
   }
 .menu_itens{
   align-items: right;
@@ -17,6 +18,7 @@ html{
   /* align-items: left; */
   background-size: 50px;
   background-image: url("https://as2.ftcdn.net/v2/jpg/01/37/81/97/1000_F_137819766_dgFsCLOVCF6fuOjn53t8lpuc9oxsCmtf.jpg");
+  background-size: cover;
 }
 .menu {
   background-color: #101c3a;
@@ -80,27 +82,26 @@ html{
 
 .localhome{
 
-  width: 80vw;
+  width: 100vw;
   display: flex;
-  /* height: 100vh; */
   align-items: center;
   justify-content: center;
-  padding:20px;
   margin: 0 auto;
+  background-color: #000000;
+
 }
 
 .slider{
   width: 800px;
   height: 400px;
   overflow: hidden;
+  border-radius: 50px;
   
 }
-
 .slides{
   width: 400%;
   height: 400px;
   display: flex;
-
 }
 .slides input{
   display: none;
@@ -189,15 +190,7 @@ html{
   background-color: #fff;
 }
 
-.rodape{
-    background-color: #101c3a;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    align-items: center;
-    margin: 0px  auto;
-  }
+
 
   #back-to-top {
     position: fixed;
@@ -208,9 +201,10 @@ html{
   }
   #back-to-top a {
     display: block;
-    width: 40px;
-    height: 40px;
-    background: #515A5F url("https://static.vecteezy.com/system/resources/previews/014/455/887/non_2x/curve-arrow-upward-icon-on-transparent-background-free-png.png") no-repeat center center;
+    width: 20px;
+    height: 20px;
+    background: #515a5f url("https://w7.pngwing.com/pngs/418/550/png-transparent-arrow-circle-up-solid-icon.png") no-repeat center center;
+    background-size:cover;
     text-indent: -9999px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -223,6 +217,12 @@ html{
   #back-to-top a:hover {
     background-color: #222222;
   }
+  
+  .back-to-topbtn{
+
+  }
+  
+  
 
 .sobre{
   background-color: #f2f2f2;
@@ -231,6 +231,7 @@ html{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 
@@ -340,23 +341,24 @@ html{
     height: 100vh;
     padding: 0 20px;
     align-items: center;
-    margin: 0px  auto;
+    margin: 10px  auto;
+    margin-bottom: 50px;
   }
   .container_depoimentos{
     display: flex;
-    margin: 10px;
-    /* background-color: #150adb; */
     align-content: center;
     justify-content: space-between;
     align-items: center;
     border-radius: 50px;
     gap:20px;
     padding: 20px;
+    margin: 10px;
   }
 
   @media (max-width: 800px) {
     .lista_modalidade , .container_depoimentos {
       flex-direction: column;
+      margin: 10px;
     }
   }
 
@@ -409,14 +411,80 @@ html{
   }
   
   .contato{
+    background-color: #04AA6D;
+    margin-top: 20px;
     width: 80vw;
-    height: 50vh;
+    height: 30vh;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
     align-items: center;
-    margin: 0px  auto;
+    margin: 0px  auto;  
+    margin-bottom: 20px;
+    border-radius: 30px;
   }
+  .contatos_container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .contatos_container h1 , p{
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .contato .contatos_container .socialmedia{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+  }
+
+.socialmedia button{
+  background:none;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.rodape{
+  background-color: #0d152c;
+  height: 150px;
+  display: flex;
+  padding: 0 20px;
+
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+}
+.rodape_container{
+  color: #c5c7bd;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0px  auto;
+}
+
+.footer_btn{
+  background:none;
+  color: rgb(202, 109, 249);
+  font-size: 20px;
+  font-family: "Montserrat";
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
   /*  #101c3a 
       #000000
       #ffffff
