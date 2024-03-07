@@ -1,16 +1,27 @@
+:root{
+  --main_color : #1B2020;
+  --red : #EF3A5C;
+  --pinkish: #c55066;
+  --blue: #425B91;
+  --dark_brown: #332528;
+  --light_brown: #705358;
+}
+
+
 html{
   scroll-behavior: smooth;
   margin: 0px;
+  background-color: black;
 }
 .pagina{
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   }
 .menu_itens{
   justify-content: flex-end;
   font-family:"Montserrat", sans-serif;
 }
 .menu {
-  background-color: #101c3a;
+  background-color:var(--main_color);
   overflow: hidden;
   display: flex;
   justify-content: center;
