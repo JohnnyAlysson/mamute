@@ -43,23 +43,18 @@ html{
 .menu a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
   transition: 0.5s ease-in-out;
 }
 /* Change the color of links on hover */
 .menu a:hover {
-  background-color: #85756E;
-  color: black;
-  border-radius: 20px;
-}
-/* Add an active class to highlight the current page */
-.menu a.active {
-  background-color: #04AA6D;
+  background-color: var(--light_brown);
   color: white;
+  border-radius: 30px;
 }
 /* Hide the link that should open and close the menu on small screens */
 .menu .icon {
