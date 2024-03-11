@@ -206,20 +206,19 @@ html{
   }
   
 .sobre {
-  background-color: #f2f2f2;
+  margin-top: 20px;
+  background-color: white;
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 .texto_sobre{
   font-family: "Montserrat";
   display: flex;
   /* flex-wrap: wrap; */
-  padding: 20px 0;
+  margin: 0 50px 0 50px;
   justify-content: center;
   flex-direction: column;
   align-content: center;
@@ -228,45 +227,48 @@ html{
 }
 
 .texto_sobre h1{
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 500;
 }
 .texto_sobre h2{ 
-  font-size: 20px;
+  font-size: 25px;
 }
 .container_conteudo_sobre{
+  margin: 0 50px 0 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   /* width: 100px; */
-  padding: 20px 0;
   flex-direction: row;
   transition: 0.5 ease-in-out;
 }
 
 
 .conteudo_sobre{
+  width: 100%;
+  height: 100%;
   align-content: center;
   justify-content: center;
   text-align: center;
-  padding: 20px 0 ;
+  padding: 20px ;
 }
 
 
 .conteudo_sobre img{
-  max-width: 400px;
+  max-width: 100%;
+  height: auto;
   border-radius: 20px;
   
 }
 
 .conteudo_sobre h2{
-  font-size: 20px;
+  font-size: 25px;
   font-style: italic;
   padding: 10px 0 ;
   font-weight: 550;
 }
 .conteudo_sobre h3{
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .modalidades{
