@@ -42,13 +42,16 @@
     .container_conteudo_sobre,
     .lista_modalidade,
     .container_depoimentos {
-    flex-direction: column; 
-    align-items: center; 
+        flex-direction: column; 
+        align-items: center; 
     }
     .manual-navigation,
     .navigation-auto {
     position: relative; 
     }
+    .lista_modalidade img{
+        max-width: 300px;
+      }
     .menu.responsive {
     position: static; 
     }
