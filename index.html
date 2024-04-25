@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Montserrat:ital@0;1&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Mamute </title>
 </head>
 <div id="back-to-top" class="back-to-topbtn" style="display: block;"><a href="#">Voltar para o topo</a></div>
@@ -32,48 +33,34 @@
     </div>
     </header>
     <section class="localhome">
-        <div id="home" class="slider">
-            <div class="slides">
-                <!--- Radio buttons--->
-                <input type="radio" name="radion-btn" id="radio1">
-                <input type="radio" name="radion-btn" id="radio2">
-                <input type="radio" name="radion-btn" id="radio3">
-                <input type="radio" name="radion-btn" id="radio4">
-                <!---End Radio buttons-->
-
-                <!---Slide images-->
-                <div class="slide first">
-                    <img src="https://media.istockphoto.com/id/1353007397/pt/foto/aerial-view-of-blue-lakes-and-and-hills-with-green-forests-in-croatia.jpg?s=2048x2048&w=is&k=20&c=Hso7V9lK8FzAltlKoA8NgZsc_fPt0puGAeCrTaIZITY=" alt="">
-                </div>
-                <div class="slide">
-                    <img src="https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover" alt="">
-                </div>
-                <div class="slide">
-                    <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6_3x2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png" alt="">
-                </div>
-
-                <!---End Slide images-->
-
-                <!---Navigation auto-->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-        
-            <!---End Navigation auto-->
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./assets/slide1.png" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/slide2.png" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/slide3.png" alt="Terceiro Slide">
+              </div>
             </div>
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
+            <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
         </div>
+        
+
     </section>
 
     <section id="sobre" class="sobre">
@@ -163,7 +150,9 @@
 
     </footer>
     <script src="./script/script.js"></script>
-    <script src="./script/animation.js"></script>
     <script src="https://kit.fontawesome.com/e817e6100b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
