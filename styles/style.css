@@ -177,8 +177,6 @@ html{
   background-color: #fff;
 }
 
-
-
   #back-to-top {
     position: fixed;
     z-index: 1000;
@@ -270,9 +268,11 @@ html{
 .conteudo_sobre h3{
   font-size: 18px;
 }
+/* INICIO MODALIDADEs */
 
 .modalidades{
   background-color: #000000 ;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -299,10 +299,11 @@ html{
   text-align: center;
 }
 .lista_modalidade p {
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 20px;
 }
 .lista_modalidade img{
+  border-radius: 20px;
   display: flex;
   align-self: center;
   max-width: 500px;
@@ -311,12 +312,15 @@ html{
 .modalidade{
   display:flex;
   flex-direction: column;
-  background-color: var(--light_brown);
+  background-color: var(--dark_brown);
   border-radius: 50px;
   padding: 20px;
   gap: 10px;
 }
 
+/* FIM MODALIDADEs */
+
+/* INICIO DEPOIMENTOS */
 .depoimentos {
   width: 100vw;
   padding: 20px 0px;
@@ -351,18 +355,19 @@ html{
   font-family: "Montserrat";
   font-size: 20px;
 }
-  .depoimento_content p{
-    margin: 0 20px;
-  }
-  .depoimento_image{
-    border-radius: 20px;
-    background-image: url(https://img.freepik.com/free-photo/designer-working-3d-model_23-2149371896.jpg?w=360&t=st=1706654073~exp=1706654673~hmac=e7a08fe47f632103674200cd5837b800ac561edc75b4f2caf37624bbe16cf1d1);
-    background-color: #04AA6D;
-    filter:drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 1rem);
-    background-size: cover;
-    width: 250px;
-    height: 250px;
-  }
+.depoimento_content p{
+  margin: 0 20px;
+}
+.depoimento_image{
+  border-radius: 20px;
+  background-image: url(https://img.freepik.com/free-photo/designer-working-3d-model_23-2149371896.jpg?w=360&t=st=1706654073~exp=1706654673~hmac=e7a08fe47f632103674200cd5837b800ac561edc75b4f2caf37624bbe16cf1d1);
+  background-color: #04AA6D;
+  filter:drop-shadow(rgb(0, 0, 0) 0.5rem 0.5rem 1rem);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
   .link_depoimentos{
     display: flex;
     align-items: center;
@@ -387,9 +392,11 @@ html{
     scale: 1.2;
   }
 
+  /* FIM DEPOIMENTOS */
   
   .contato {
-    background-color: #04aa6d;
+    color: whitesmoke;
+    background-color: var(--dark_brown);
     margin-top: 20px;
     width: 100%;
     display: flex;
@@ -415,7 +422,7 @@ html{
     text-decoration: none;
     font-family: "Montserrat";
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
   }
   
   .socialmedia {
@@ -425,9 +432,9 @@ html{
 
   .socialmedia a{
     text-decoration: none;
-    color: #000000;
+    color: whitesmoke;
+    font-size: 24px;
     background-color: transparent;
-    transition: 0.5s ease-in-out;
   }
   .socialmedia a:hover {
     text-decoration: none;

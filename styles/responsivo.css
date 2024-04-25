@@ -89,7 +89,7 @@
             width: 100%;
         }
     }
-    @media (min-width: 800px) {
+    @media (min-width: 600px) {
         .container_conteudo_sobre {
             flex-direction: row;
         }
@@ -100,5 +100,11 @@
         .modalidade {
             width: calc(25% - 20px);
         }   
+        .texto_sobre h2{
+            font-size: 20px;
+        }
+        .conteudo_sobre h2{
+            font-size: 20px;
+        }
     }   
 }
