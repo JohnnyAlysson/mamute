@@ -1,0 +1,65 @@
+h1{
+  font-size: 54;
+}
+h2{
+  font-size: 36;
+}
+h3{
+  font-size: 24;
+}
+h4{
+  font-size: 20;
+}
+p{
+  font-size: 18;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#00A0C6; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+.animation {
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.logo_menu{
+max-width: 50px;
+border-radius: 50%;
+}
+.logo_menu:hover{
+  scale: 1.25;
+  transition-timing-function: ease-out;
+  transition: 0.5s;
+  filter: drop-shadow(5px 5px 40px rgba(128, 128, 128, 0.489));
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5em;
+}
+.menu_option:hover{
+  color: inherit;
+  border: 1px black solid;
+  padding: 1rem;
+  transition-timing-function: ease-out;
+  transition: 0.2s;
+}
+.menu_items a{
+  font-size: 20px;
+  font-style: normal;
+}

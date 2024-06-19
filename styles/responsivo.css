@@ -1,4 +1,12 @@
 
 @media screen and (max-width: 800px) {
-    
+    .navbar{
+      margin-top: 5px;
+    }
+    .menu{
+      gap: 10px;
+    }
+    .menu_items a{
+      font-size: 18px;
+    }
 }
