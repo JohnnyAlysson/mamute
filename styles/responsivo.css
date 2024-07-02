@@ -1,4 +1,72 @@
 
-@media screen and (max-width: 800px) {
-    
+@media screen and (max-width: 600px) {
+    html{
+        margin: 0px 0px;
+    }
+    .menu {
+    gap: 10px; 
+    }
+    .menu_itens {
+    justify-content: flex-end;
+    gap: 10px; 
+    }
+    .menu a {
+    padding: 10px; 
+    font-size: 14px; 
+    }
+    .container_conteudo_sobre,
+    .lista_modalidade,
+    .container_depoimentos {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .lista_modalidade img{
+        max-width: 300px;
+      }
+    .menu.responsive {
+    position: static; 
+    }
+    .menu.responsive a.icon {
+    position: static; 
+    float: none; 
+    display: block; 
+    }
+    .menu.responsive a {
+    text-align: center; 
+    }
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+    float: right;
+    display: block;
+    }
+    .menu.responsive {position: relative;}
+    .menu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+    .depoimento_content {
+        width: 100%;
+    }
+    .container_conteudo_sobre {
+        flex-direction: row;
+    }
+    .conteudo_sobre {
+        width: 33.33%;
+        padding: 20px;
+    }
+    .modalidade {
+        width: calc(25% - 20px);
+    }   
+    .texto_sobre h2{
+        font-size: 20px;
+    }
+    .conteudo_sobre h2{
+        font-size: 20px;
+    }
 }
