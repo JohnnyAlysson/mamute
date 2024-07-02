@@ -3,34 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Keywords" content="Colors, Training, Website, exercicio, físico , mamute, artes , marciais, mma, boxe, jiu jitsu, treinamento, cleber, ">
-    <meta name="Description" content="Academia de artes marciais">
-    <link rel="icon" href="./assets/logo_mamute_preta.png">
-    <link rel="stylesheet" href="./styles/reset.css">
+    <title>Zen Warrior Dojo - Martial Arts Training Center</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/responsivo.css">
-    <title>Mamute Team Eusébio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <!-- Inicio header/navbar -->
-    <nav class="navbar animation" >
-        <a href="">
-            <img class="logo_menu" src="./assets/logoonlyblack.png" alt="">
-        </a>
-        <ul class="menu">
-            <li class="menu_items">
-                <a class="menu_option" href="#sobre" class="menu_item">Sobre</a>
-            </li>
-            <li class="menu_items">
-                <a class="menu_option" href="#modalidades" class="menu_item" >Modalidades</a>
-            <li class="menu_items">
-                <a class="menu_option" href="#depoimentos" class="menu_item">Depoimentos</a>
-            </li>
-            <li class="menu_items">
-                <a class="menu_option" href="#contato" class="menu_item" >Contato</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- fim header/navbar -->
+    <header>
+        <nav>
+            <div class="logo">Zen Warrior Dojo</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#modalities">Modalities</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="https://example.com/image1.jpg" alt="Martial Arts Training">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://example.com/image2.jpg" alt="Karate Class">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://example.com/image3.jpg" alt="Judo Practice">
+                </div>
+            </div>
+            <button class="carousel-btn prev">&lt;</button>
+            <button class="carousel-btn next">&gt;</button>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Zen Warrior Dojo</h2>
+            <p>Zen Warrior Dojo is a premier martial arts training center dedicated to cultivating mind, body, and spirit. Our expert instructors guide students of all levels through various disciplines, fostering personal growth and self-defense skills.</p>
+        </section>
+
+        <section id="modalities" class="modalities">
+            <h2>Our Modalities</h2>
+            <div class="modality-grid">
+                <div class="modality-card">
+                    <i class="fas fa-fist-raised"></i>
+                    <h3>Karate</h3>
+                    <p>Master the art of empty-hand self-defense</p>
+                </div>
+                <div class="modality-card">
+                    <i class="fas fa-yin-yang"></i>
+                    <h3>Judo</h3>
+                    <p>Learn the gentle way of throwing and grappling</p>
+                </div>
+                <div class="modality-card">
+                    <i class="fas fa-dragon"></i>
+                    <h3>Kung Fu</h3>
+                    <p>Explore the diverse styles of Chinese martial arts</p>
+                </div>
+                <div class="modality-card">
+                    <i class="fas fa-fist-raised"></i>
+                    <h3>Brazilian Jiu-Jitsu</h3>
+                    <p>Master ground fighting and submission techniques</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <h2>Student Reviews</h2>
+            <div class="review-container">
+                <div class="review-card">
+                    <p>"Zen Warrior Dojo has transformed my life. The instructors are knowledgeable and supportive."</p>
+                    <p class="reviewer">- Sarah J.</p>
+                </div>
+                <div class="review-card">
+                    <p>"I've gained confidence and discipline through my training here. Highly recommended!"</p>
+                    <p class="reviewer">- Mike T.</p>
+                </div>
+                <div class="review-card">
+                    <p>"The facilities are top-notch, and the community is welcoming. A great place to learn martial arts!"</p>
+                    <p class="reviewer">- Lisa M.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Martial Way, Zen City, ZC 12345</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@zenwarriordojo.com</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zen Warrior Dojo. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
 </body>
 </html>
