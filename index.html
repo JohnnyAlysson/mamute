@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zen Warrior Dojo - Martial Arts Training Center</title>
+    <title>Mamute Team Eusébio</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Zen Warrior Dojo</div>
+            <div class="logo"><img class="logo" src="./assets/logoonlywhite.png" alt=""></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#modalities">Modalities</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#modalidades">Modalidades</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -30,74 +30,65 @@
         <section id="home" class="carousel">
             <div class="carousel-container">
                 <div class="carousel-slide">
-                    <img src="https://example.com/image1.jpg" alt="Martial Arts Training">
+                    <img src="./assets/jiujitsu1.jpg" alt="Jiu-Jitsu">
                 </div>
                 <div class="carousel-slide">
-                    <img src="https://example.com/image2.jpg" alt="Karate Class">
+                    <img src="./assets/boxetrainning.jpg" alt="Karate Class">
                 </div>
                 <div class="carousel-slide">
-                    <img src="https://example.com/image3.jpg" alt="Judo Practice">
+                    <img src="./assets/boxegloves.jpg" alt="Judo Practice">
                 </div>
             </div>
             <button class="carousel-btn prev">&lt;</button>
             <button class="carousel-btn next">&gt;</button>
         </section>
 
-        <section id="about" class="about">
-            <h2>About Zen Warrior Dojo</h2>
-            <p>Zen Warrior Dojo is a premier martial arts training center dedicated to cultivating mind, body, and spirit. Our expert instructors guide students of all levels through various disciplines, fostering personal growth and self-defense skills.</p>
+        <section id="sobre" class="about">
+            <h2>Sobre Mamute Team Eusébio</h2>
+            <p>Aulas personalizadas. Boxe, jiu-jitsu, Muay Thai e defesa pessoal.</p>
         </section>
 
-        <section id="modalities" class="modalities">
-            <h2>Our Modalities</h2>
+        <section id="modalidades" class="modalidades">
+            <h2>Nossas modalidades</h2>
             <div class="modality-grid">
                 <div class="modality-card">
                     <i class="fas fa-fist-raised"></i>
-                    <h3>Karate</h3>
-                    <p>Master the art of empty-hand self-defense</p>
+                    <h3>Jiu-Jitsu</h3>
+                    <p>Domine a arte da suavidade e aprenda a usar a força do seu adversário contra ele com o Jiu-Jitsu</p>
                 </div>
                 <div class="modality-card">
-                    <i class="fas fa-yin-yang"></i>
-                    <h3>Judo</h3>
-                    <p>Learn the gentle way of throwing and grappling</p>
-                </div>
-                <div class="modality-card">
-                    <i class="fas fa-dragon"></i>
-                    <h3>Kung Fu</h3>
-                    <p>Explore the diverse styles of Chinese martial arts</p>
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                    <h3>Boxe</h3>
+                    <p>Melhore sua resistência, reflexos e poder de ataque enquanto desvenda os segredos do boxe</p>
                 </div>
                 <div class="modality-card">
                     <i class="fas fa-fist-raised"></i>
-                    <h3>Brazilian Jiu-Jitsu</h3>
-                    <p>Master ground fighting and submission techniques</p>
+                    <h3>Muay Thai</h3>
+                    <p>Desbloqueie seu guerreiro interior e domine as técnicas poderosas de socos, chutes, cotoveladas e joelhadas com o Muay Thai</p>
+                </div>
+                <div class="modality-card">
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Karatê</h3>
+                    <p>Desenvolva disciplina, força mental e habilidades de defesa pessoal com a prática do Karatê</p>
                 </div>
             </div>
         </section>
 
-        <section id="reviews" class="reviews">
-            <h2>Student Reviews</h2>
+        <!--WIDGET GOOGLE REVIEW -->
+        <section id="depoimentos" class="depoimentos">
             <div class="review-container">
-                <div class="review-card">
-                    <p>"Zen Warrior Dojo has transformed my life. The instructors are knowledgeable and supportive."</p>
-                    <p class="reviewer">- Sarah J.</p>
-                </div>
-                <div class="review-card">
-                    <p>"I've gained confidence and discipline through my training here. Highly recommended!"</p>
-                    <p class="reviewer">- Mike T.</p>
-                </div>
-                <div class="review-card">
-                    <p>"The facilities are top-notch, and the community is welcoming. A great place to learn martial arts!"</p>
-                    <p class="reviewer">- Lisa M.</p>
-                </div>
-            </div>
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div id="depoimentos" class="elfsight-app-c11a9115-9e85-4b0c-9281-966e01c3158e" data-elfsight-app-lazy></div>
+            </div> 
         </section>
-
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
+        <!--WIDGET GOOGLE REVIEW -->
+        <!-- NAo sera possivel implementar se ficar aberto -->
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
             <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> 123 Martial Way, Zen City, ZC 12345</p>
-                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                <p><i class="fas fa-envelope"></i> info@zenwarriordojo.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> R. Maria Rodrigues, 48 - Centro, Eusébio - CE, 61760-000</p>
+                <p><i class="fas fa-phone"></i> (85) 98884-7709</p>
+                <p><i class="fas fa-envelope"></i> cleberjuniorjob@gmail.com</p>
             </div>
             <form class="contact-form">
                 <input type="text" placeholder="Name" required>
@@ -109,12 +100,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Zen Warrior Dojo. All rights reserved.</p>
+        <a class="copy" href="https://github.com/JohnnyAlysson" target="_blank"><p>&copy; Criado por Johnny Alysson. All rights reserved.</p></a>
         <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="https://pt-br.facebook.com/MamuteTeamEusebio/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/explore/locations/100574925342626/mamute-team-eusebio/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5585988847709?text=Gostaria%20de%20falar%20sobre%20as%20modalidades%20disponíveis." target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
 
